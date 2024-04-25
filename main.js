@@ -1,9 +1,9 @@
-let name = prompt ("Ismingizni kiriting . . . .")
-let abc = prompt ("Ixtyoriy harf kiriting . . . ")
-let test = abc.includes(name);
+let name = prompt("Ismingizni kiriting . . . .").toLocaleLowerCase()
+let abc = prompt("Ixtyoriy harf kiriting . . . ").toLocaleLowerCase()
+let test = name.includes(abc);
 
 if (test) {
-    alert("Sizning ismingizda bu harif mavjud...");
-}else {
-    alert("Sizning ismingizda bu harif mavjud emas...");
+    alert("Sizning ismingizda "+ + abc + " harif mavjud...");
+} else {
+    alert("Sizning ismingizda " + abc + " harif mavjud emas...");
 }
